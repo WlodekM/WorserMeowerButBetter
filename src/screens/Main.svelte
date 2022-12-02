@@ -26,7 +26,7 @@
 		{:else if $page === "blank"}
 			<div></div>
 		{:else}
-			Somehow, you got to a page that doesn't exist...
+			H O W
 			<br />
 			(Current page: {$page})
 		{/if}
