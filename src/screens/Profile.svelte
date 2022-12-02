@@ -38,21 +38,18 @@
 		</div>
 	</Container>
 	<Container>
-		<h2>Profile Picture</h2>
+		<h2>Change nothing</h2>
+		<p>You cannot change your profile picture</p>
+		<p>(You can still press the buttons, but you cant actually change it.)</p>
 		<div id="pfp-list">
 			{#each pfps as pfp}
 				<span
-					on:click={() => {
-						if (_user.pfp_data === pfp) return;
-						_user.pfp_data = pfp;
-						save();
-					}}
 					class="pfp"
 					class:selected={_user.pfp_data === pfp}
 				><PFP
 						online={false}
 						icon={pfp}
-						alt="Profile picture {pfp}"
+						alt="Whats 9 + 10? {pfp}"
 					></PFP></span>
 			{/each}
 		</div>
