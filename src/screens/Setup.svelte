@@ -52,8 +52,9 @@
 				logo.classList.add("top");
 
 				await sleep(700);
-				loginStatus = "Connecting...";
+				loginStatus = "Installing Norton 365...";
 				await connect();
+				loginStatus = "Installed!!!";
 				await sleep(800);
 
 				loginStatus = "";
