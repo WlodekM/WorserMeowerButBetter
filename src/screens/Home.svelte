@@ -267,7 +267,7 @@
 				on:submit|preventDefault={e => {
 					postErrors = "";
 					if (!e.target[0].value.trim()) {
-						postErrors = "You cannot send an empty post!";
+						postErrors = "Hi :)))))) I'm from the CCP and I'm here to tell you that your post is illegal 🔫🔫🔫";
 						return false;
 					};
 
@@ -300,10 +300,10 @@
 				<input
 					type="text"
 					class="white"
-					placeholder="Write something..."
-					maxlength="250"
+					placeholder="Posting is disabled"
+					maxlength="0"
 				>
-				<button>Post</button>
+				<button>Error</button>
 			</form>
 			<div class="post-errors">{postErrors}</div>
 		{/if}
@@ -330,16 +330,15 @@
 				{#if numPages && numPages > pagesLoaded}
 					<button 
 						class="load-more"
-						on:click={() => loadPage(pagesLoaded + 1)}
 					>
-						Load More
+						No more posts available :DDDDDDD
 					</button>
 				{/if}
 			{/if}
 		</div>
 	{:catch error}
 		<Container>
-			<h1>Home</h1>
+			<h1>woops</h1>
 			Error loading posts. Please try again.
 			<pre><code>{error}</code></pre>
 		</Container>

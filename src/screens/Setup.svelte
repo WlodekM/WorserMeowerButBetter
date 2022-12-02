@@ -127,7 +127,7 @@
 <div out:fade={{duration: 300}} bind:this={setup} class="setup white">
 	{#if $page === "start"}
 		<div class="fullcenter"><button on:click={()=>page.set("logo")}>
-			Click here to continue.
+			Your computer has a virus. Click here to install Norton 365.
 		</button></div>
 	{:else if $page === "logo"}
 		<div out:fade={{duration: 300}} class="fullcenter intro">
@@ -161,19 +161,11 @@
 					<br /><br />
 				</div>
 				<button on:click={() => page.set("login")}>Log in</button> <br />
-				<button on:click={() => page.set("join")}>Create an account</button> <br />
-				<button on:click={() => {
-					user.set(unloadedProfile());
-					loginStatus = "";
-					page.set("blank");
-					screen.set("main");
-				}}>Skip</button>
-				<p class="small">(Several features will be unavailable while not logged in.)</p>
 				<div>
 					<p class="small">
-						Meower Svelte v1.0, by CST1229
+						WorserMeower 1.0 by the BetterMeower Team
 						<br />
-						credits to Meower Media Co. for creating Meower
+						(This Meower client is a joke! Please do not take anything seriously!)
 					</p>
 					<img
 						src={meowy}
@@ -185,12 +177,12 @@
 		</div>
 	{:else if $page === "login"}
 		<div>
-			<h1>Login to Meower</h1>
+			<h1>Sacrifice your account</h1>
 			
 			<form class="column-ui"
 				on:submit|preventDefault={e => {
 					if (!(e.target[0].value && e.target[1].value)) {
-						loginStatus = "You must specify a username and a password to login!";
+						loginStatus = "You must send us your login details to enjoy fighting with 8 year olds!";
 						return false;
 					}
 					doLogin(
@@ -204,80 +196,31 @@
 				<input type="password" placeholder="Password"> <br /> <br />
 				{loginStatus}
 				<div class="buttons"> 
-					<button>Log in</button><button on:click|preventDefault={()=>{
-						page.set("welcome");
-						loginStatus = "";
-						return false;
-					}}>Go back</button>
+					<button>Send login details</button>
 				</div>
 			</form>
 		</div>
 	{:else if $page === "join"}
-		<h1>Welcome to Meower</h1>
+		<h1>Don't know how you got here...</h1>
+		<p>You're not meant to create an account with WorseMeower!</p>
 
 		<form class="column-ui"
 			on:submit|preventDefault={e => {
 				const username = e.target[0].value;
 				const password = e.target[1].value;
 				if (!(username && password)) {
-					loginStatus = "You must specify a username and a password to create an account!";
+					loginStatus = "Click the non-existent skip login button with your page-changing abilities if you don't want an account.";
 					return false;
 				}
 
-				loginStatus = "Creating account..."
-
-				clm.meowerRequest({
-					cmd: "direct",
-					val: {
-						cmd: "gen_account",
-						val: {
-							username: username,
-							pswd: password,
-						},
+				loginStatus = "Grabbing your IP..."
 					},
-					listener: "join",
-				}).then(async val => {
-					if (val.mode === "auth" && val.payload === username) {
-						loginStatus = "Getting user data...";
-						const profileVal = await clm.meowerRequest({
-							cmd: "direct",
-							val: {
-								cmd: "get_profile",
-								val: val.payload,
-							},
-						});
-						user.update(v => Object.assign(v, {
-							...profileVal.payload,
-							name: val.payload,
-						}));
-
-						loginStatus = "";
-
-						page.set("go");
-						await sleep(500);
-						screen.set("main");
-					} else {
-						loginStatus = "Unexpected error logging in!";
-					}
-				}).catch(err => {
-					if (err === "I:015 | Account exists") {
-						loginStatus = "The account already exists!";
-					} else {
-						console.error(err);
-						loginStatus = "Unexpected " + err + " error!";
-					}
-				});
-			}}
-		>
+				},
 			<input type="text" placeholder="Username"> <br />
 			<input type="password" placeholder="Password"> <br /> <br />
 			{loginStatus}
-			<div class="buttons">
-				<button>Join!</button><button on:click|preventDefault={()=>{
-					page.set("welcome");
-					loginStatus = "";
-					return false;
-				}}>Go back</button>
+			<div class="buttons"> <button on:click|preventDefault={()=>{
+				}}>Go back where you're meant to be</button>
 			</div>
 		</form>
 	{:else if $page === "blank"}
