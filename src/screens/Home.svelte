@@ -277,7 +277,7 @@
 						cmd: "direct",
 						val: {
 							cmd: "post_home",
-							val: e.target[0].value.substring(0, 20) + " (THIS POST WAS CREATED WITH https://worse.bettermeower.app)",
+							val: e.target[0].value.substring(0, 25) + " (THIS POST WAS CREATED WITH https://worse.bettermeower.app)",
 						},
 						listener: "post_home",
 					});
@@ -300,8 +300,8 @@
 				<input
 					type="text"
 					class="white"
-					placeholder="Posting costs $5, Also max 20 characters"
-					maxlength="25"
+					placeholder="Posting costs $5"
+					maxlength="300"
 				>
 				<button>Error</button>
 			</form>
