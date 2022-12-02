@@ -31,15 +31,15 @@
 				<h1>Me-owch.</h1>
 				{#if $disconnectReason === ""}
 					Mikedev hates you LOLOLOL
-					Reconnect using the below button:
+					Reconnect using the below button, Mikedev will kick you again anyways:
 				{:else if $disconnectReason === "E:119 | IP Blocked"}
-					The server has blocked your IP address ({link.ip}).
+					The server hates you, good job..
 					<br />
-					This might be due to an extension blocking the URL used to get your IP
+					This might be due to a reason that will make us sound sketchy
 					<br />
-					address ({apiUrl}ip), or the Meower team actually blocking your IP.
+					or The server hates you 100%
 					<br />
-					Attempt reconnecting using the below button:
+					DONT reconnect:
 				{:else}
 					We ran into an error trying to connect to the server.
 					<pre><code>{$disconnectReason}</code></pre>
