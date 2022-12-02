@@ -29,23 +29,16 @@
 		position: relative;
 	}
 	.big .pfp {
-		width: 5em;
+		width: 4em;
 		height: 5em;
 	}
 	.pfp {
-		width: 3.75em;
+		width: 3em;
 		height: 3.75em;
-		box-sizing: border-box;
 
-		background-color: red;
-		border: solid 1.5px var(--pfp-outline);
+		background-color: black;
+		border: solid 10px pink;
 		border-bottom-width: 5px;
-		border-radius: 1.25em;
-
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		user-select: none;
 	}
 
 	.loading {
