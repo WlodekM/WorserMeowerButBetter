@@ -29,7 +29,7 @@
 	<Container>
 		<div class="profile-header">
 			<PFP
-				online={true}
+				online={false}
 				big={true}
 			></PFP>
 			<h1 class="profile-username">{_user.name}</h1>

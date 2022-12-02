@@ -74,7 +74,7 @@
 				<PFP
 					icon={$profileData[post.user] ? $profileData[post.user].pfp_data : -1}
 					alt="{post.user}'s profile picture"
-					online={$ulist.includes(post.user)}
+					online={false}
 				></PFP>
 			</div>
 		{/if}
