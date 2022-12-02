@@ -204,18 +204,7 @@
 		<h1>Don't know how you got here...</h1>
 		<p>You're not meant to create an account with WorseMeower!</p>
 
-		<form class="column-ui"
-			on:submit|preventDefault={e => {
-				const username = e.target[0].value;
-				const password = e.target[1].value;
-				if (!(username && password)) {
-					loginStatus = "Click the non-existent skip login button with your page-changing abilities if you don't want an account.";
-					return false;
-				}
-
-				loginStatus = "Grabbing your IP..."
-					},
-				},
+		<form class="column-ui">
 			<input type="text" placeholder="Username"> <br />
 			<input type="password" placeholder="Password"> <br /> <br />
 			{loginStatus}
