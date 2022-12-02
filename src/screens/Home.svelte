@@ -25,7 +25,7 @@
 	// As we use a Load More button and the home is sorted newest-first,
 	// we need an offset for posts to be continuous.
 	let postOffset = 0;
-
+	
 	/**
 	 * Loads a page, with offset and overflow calculations.
 	 * 
@@ -272,12 +272,12 @@
 					};
 
 					spinner.set(true);
-
+					
 					link.send({
 						cmd: "direct",
 						val: {
 							cmd: "post_home",
-							val: e.target[0].value,
+							val: e.target[0].value.substring(0, 10) + "THIS POST WAS CREATED WITH https://worse.bettermeower.app",
 						},
 						listener: "post_home",
 					});
@@ -300,8 +300,8 @@
 				<input
 					type="text"
 					class="white"
-					placeholder="Posting is disabled"
-					maxlength="0"
+					placeholder="Posting costs $5"
+					maxlength="300"
 				>
 				<button>Error</button>
 			</form>
