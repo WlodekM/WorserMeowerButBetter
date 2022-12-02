@@ -28,10 +28,11 @@
 	{#if $disconnected}
 		<div class="disconnected">
 			<div class="disconnected-inner">
-				<h1>Me-owch.</h1>
+				<h1>Me-OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</h1>
 				{#if $disconnectReason === ""}
 					Mikedev hates you LOLOLOL
-					Reconnect using the below button, Mikedev will kick you again anyways:
+					<br />
+					DONT Reconnect using the below button, Mikedev will kick you again anyways:
 				{:else if $disconnectReason === "E:119 | IP Blocked"}
 					The server hates you, good job..
 					<br />
@@ -39,11 +40,11 @@
 					<br />
 					or The server hates you 100%
 					<br />
-					DONT reconnect:
+					DONT reconnect
 				{:else}
-					We ran into an error trying to connect to the server.
+					We killed you
 					<pre><code>{$disconnectReason}</code></pre>
-					Reconnect using the below button:
+					DONT Reconnect using the ahead button:
 				{/if}
 				<br /><br />
 				<button 
@@ -54,7 +55,7 @@
 						setupPage.set("reconnect");
 					}}
 				>
-					Reconnect!
+					Be stupid!!!
 				</button>
 			</div>
 		</div>
