@@ -80,13 +80,18 @@
 		{/if}
 		<div class="creator">
 			<h2 class="creator">{post.user}</h2>
-			<FormattedDate date={post.date}></FormattedDate>
+			<span class="date">You cannot view dates</span>
 		</div>
 	</div>
 	<p>{post.content}</p>
 </Container>
 
 <style>
+	.date {
+		font-style: italic;
+		font-family: Simvoni-Italic, sans-serif;
+		text-decoration: 2px underline dotted;
+	}
 	.pfp {
 		margin-right: 0.2em;
 	}

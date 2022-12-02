@@ -21,7 +21,7 @@
 </Container>
 <Container>
 	<h2>Dark Mode</h2>
-	Dark mode is currently {$user.mode ? "disabled" : "enabled"}. This cannot be changed.
+	Dark mode is currently {$user.mode ? "disabled, BAD BOI" : "enabled, good boi 🐶"}. This cannot be changed.
 </Container>
 
 <div class="eee"></div>
