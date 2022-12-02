@@ -2,7 +2,7 @@
 
 <script>
 	export let icon = -1;
-	export let alt = "Profile picture";
+	export let alt = "You cannot view this PFP.";
 	export let online = false;
 	export let big = false;
 </script>
@@ -13,10 +13,8 @@
 	{/if}
 	<span class="pfp">
 		<img
-			{alt}
+			alt="You cannot view this PFP."
 			title={alt}
-			src="/avatars/icon_{
-				icon < 0 ? (icon === -1 ? 21 : "err") : icon-1}.svg"
 			class:loading={icon === -1}
 			draggable={false}
 			width="auto"
@@ -39,7 +37,7 @@
 		height: 3.75em;
 		box-sizing: border-box;
 
-		background-color: var(--pfp-bg);
+		background-color: red;
 		border: solid 1.5px var(--pfp-outline);
 		border-bottom-width: 5px;
 		border-radius: 1.25em;

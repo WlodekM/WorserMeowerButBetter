@@ -30,8 +30,6 @@
 		<div class="profile-header">
 			<PFP
 				online={true}
-				icon={_user.pfp_data}
-				alt="{_user.name}'s profile picture"
 				big={true}
 			></PFP>
 			<h1 class="profile-username">{_user.name}</h1>
