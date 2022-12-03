@@ -69,7 +69,7 @@
 
 <Container>
 	{#if post.ad}
-		<p>ad pl</p>
+		<img src={"/ads/ad-"+Math.ceil(Math.random()*4)+".png"} alt="ad">
 	{:else}
 		<div class="post-header">
 			{#if $user.name}
