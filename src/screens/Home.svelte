@@ -107,6 +107,14 @@
 		posts = posts;
 	}
 
+	function addad() {
+		posts.unshift({
+			id: id++,
+			ad: "ad"
+		});
+		posts = posts;
+	}
+
 	/**
 	 * Adds events to listen for live post updates.
 	 */
@@ -121,12 +129,7 @@
 			});
 			postOffset++;
 			if (postOffset % 5 == 0) {
-				addPost({
-					post_id: "e",
-					user: "AD",
-					content: "GET A FREE IPHONE 16",
-					date: cmd.val.t.e,
-				});
+				addad();
 			}
 			//TODO: Add comic sans to worsemeower
 			posts = posts;
@@ -289,7 +292,7 @@
 						cmd: "direct",
 						val: {
 							cmd: "post_home",
-							val: e.target[0].value.substring(0, 25) + " (THIS POST WAS CREATED WITH https://worse.bettermeower.app)",
+							val: e.target[0].value.substring(0, 25) + " (This post was made with https://worse.bettermeower.app)",
 						},
 						listener: "post_home",
 					});

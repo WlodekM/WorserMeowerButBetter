@@ -68,22 +68,26 @@
 </script>
 
 <Container>
-	<div class="post-header">
-		{#if $user.name}
-			<div class="pfp">
-				<PFP
-					icon={$profileData[post.user] ? $profileData[post.user].pfp_data : -1}
-					alt="{post.user}'s profile picture"
-					online={false}
-				></PFP>
+	{#if post.ad}
+		<p>ad pl</p>
+	{:else}
+		<div class="post-header">
+			{#if $user.name}
+				<div class="pfp">
+					<PFP
+						icon={$profileData[post.user] ? $profileData[post.user].pfp_data : -1}
+						alt="{post.user}'s profile picture"
+						online={false}
+					></PFP>
+				</div>
+			{/if}
+			<div class="creator">
+				<h2 class="creator">{post.user}</h2>
+				<span class="date">You cannot view dates</span>
 			</div>
-		{/if}
-		<div class="creator">
-			<h2 class="creator">{post.user}</h2>
-			<span class="date">You cannot view dates</span>
 		</div>
-	</div>
-	<p>{post.content}</p>
+		<p>{post.content}</p>
+	{/if}
 </Container>
 
 <style>
