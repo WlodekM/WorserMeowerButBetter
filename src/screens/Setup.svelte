@@ -147,7 +147,7 @@
 		</div>
 	{:else if $page === "reconnect"}
 		<div class="fullcenter">
-			Reconnecting...
+			Don't be naughty!
 		</div>
 	{:else if $page === "welcome"}
 		<div class="welcome">
