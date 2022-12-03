@@ -23,5 +23,9 @@
 	<h2>Dark Mode</h2>
 	Dark mode is currently {$user.mode ? "disabled, BAD BOI" : "enabled, good boi 🐶"}. This cannot be changed.
 </Container>
+<Container>
+	<h2>ad</h2>
+	To get this feature, Download our sponsor NordVPN, Staying safe online is an ever growing difficulty and you could be exploited by hackers. NordVPN allows you to change your IP address, making you harder to track, securing your privacy. Go to nordvpn.com/yourmom to get 4389230948230948239048230% off your first purcase
+</Container>
 
 <div class="eee"></div>
