@@ -301,7 +301,7 @@
 						if (cmd.val === "I:100 | OK") {
 							e.target[0].value = "";
 						} else if (cmd.val === "E:106 | Too many requests") {
-							postErrors = "You're posting too fast!";
+							postErrors = "spammer >:C";
 						} else {
 							postErrors = "Unexpected " + cmd.val + " error!";
 						}
