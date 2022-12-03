@@ -69,7 +69,7 @@
 
 <Container>
 	{#if post.ad}
-		<a href="https://www.youtube.com/watch?v=8ybW48rKBME"><img src={"/ads/ad-"+Math.ceil(Math.random()*4)+".png"} alt="ad" style="min-width: 100%; min-height: 100%;"></a>
+		<a href="https://www.youtube.com/watch?v=8ybW48rKBME"><img src={"/ads/ad-"+Math.ceil(Math.random()*4)+".png"} alt="ad" style="min-width: 50%; min-height: 50%;"></a>
 	{:else}
 		<div class="post-header">
 			{#if $user.name}
