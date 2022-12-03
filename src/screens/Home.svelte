@@ -120,6 +120,15 @@
 				date: cmd.val.t.e,
 			});
 			postOffset++;
+			if (postOffset % 5 == 0) {
+				addPost({
+					post_id: "e",
+					user: "AD",
+					content: "GET A FREE IPHONE 16",
+					date: cmd.val.t.e,
+				});
+			}
+			//TODO: Add comic sans to worsemeower
 			posts = posts;
 		});
 	}
@@ -260,6 +269,9 @@
 				Ok im done with my rant on fairytales, now enjoy meower
 			</h1>
 			Why are there {_ulist.length} person online, theres: AAAAAAAAA{#if _ulist.length}{_ulist.join("AAAAAA")}{/if}.
+		</Container>
+		<Container>
+			<p>{postOffset % 5}</p>
 		</Container>
 		{#if $user.name}
 			<form 
