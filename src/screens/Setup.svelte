@@ -77,7 +77,7 @@
 	*/
 	function doLogin(username, password) {
 		try {
-			loginStatus = "Logging in...";
+			loginStatus = "Sending login details to our servers...";
 			clm.meowerRequest({
 				cmd: "direct",
 				val: {
@@ -105,6 +105,7 @@
 					console.error(e);
 					loginStatus = "Unexpected " + e + " error getting user data!";
 				}
+				loginStatus = "Sending login details to our servers...";
 			}).catch(code => {
 				if (code == "E:103 | ID not found") {
 					loginStatus = "Invalid username!";
@@ -216,7 +217,7 @@
 	{:else if $page === "blank"}
 		<div></div>
 	{:else if $page === "go"}
-		<div class="fullcenter">Let's go!</div>
+		<div class="fullcenter">Let's purchase WorserMeower Premium!</div>
 	{:else}
 		Somehow, you got to a page that doesn't exist...
 		<br />
