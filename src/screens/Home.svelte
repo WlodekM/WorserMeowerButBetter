@@ -273,9 +273,6 @@
 			</h1>
 			Why are there {_ulist.length} person online, theres: AAAAAAAAA{#if _ulist.length}{_ulist.join("AAAAAA")}{/if}.
 		</Container>
-		<Container>
-			<p>{postOffset % 5}</p>
-		</Container>
 		{#if $user.name}
 			<form 
 				id="createpost"
