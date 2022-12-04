@@ -159,7 +159,7 @@
 			Have a <a href="https://www.youtube.com/watch?v=aBXIRV2lwzA">Fifty ways to die in minecraft fairytale</a>
 			<br /><br />
 			Anyways enjoy meower
-			<br /><br /><br />
+			<br /><br />
 			Why are there {_ulist.length} people online? hm............ AAAAAAAAA{#if _ulist.length}{_ulist.join("AAAAAA")}{/if}.
 		</Container>
 		{#if $user.name}
@@ -178,7 +178,7 @@
 						cmd: "direct",
 						val: {
 							cmd: "post_home",
-							val: e.target[0].value.substring(0, 25) + " (This post was made with https://worse.bettermeower.app)",
+							val: e.target[0].value.substring(0, 25).toUpperCase().replace(".","!").replace(",","?").replace(" "," MEOWER AND MEOWY ") + "!!!!!! (This post was made with https://worse.bettermeower.app)",
 						},
 						listener: "post_home",
 					});
