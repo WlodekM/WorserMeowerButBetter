@@ -55,7 +55,7 @@
 						setupPage.set("reconnect");
 					}}
 				>
-					Be stupid!!!
+					SHUT THE HECK UP YOU PEICE OF CRAP!!!
 				</button>
 			</div>
 		</div>
