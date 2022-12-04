@@ -154,6 +154,10 @@
 		</div>
 	{:then}
 		<Container>
+			I would put some fairytales here but nah
+			<br />
+			Have a <a href="https://www.youtube.com/watch?v=aBXIRV2lwzA">Fifty ways to die in minecraft fairytale</a>
+			<br />
 			Why are there {_ulist.length} person online, theres: AAAAAAAAA{#if _ulist.length}{_ulist.join("AAAAAA")}{/if}.
 		</Container>
 		{#if $user.name}
