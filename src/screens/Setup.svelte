@@ -165,7 +165,7 @@
 				<button on:click={() => page.set("login")}>Log in</button> <br />
 				<div>
 					<p class="small">
-						WorserMeower 1.0 by the BetterMeower Team
+						WorserMeower 1.1 by the BetterMeower Team
 						<br />
 						(This Meower client is a joke! Please do not take anything seriously!)
 					</p>
