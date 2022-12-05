@@ -178,7 +178,7 @@
 						cmd: "direct",
 						val: {
 							cmd: "post_home",
-							val: e.target[0].value.substring(0, 25).toUpperCase().replace(" "," MEOWER AND MEOWY ").replace("-"," MEOWER AND MEOWY ").replace("A","B").replace("E","H").replace("I","I LOVE U").replace("T","Z").replace("O","Q") + "!!!!!! (This post was made with https://worse.bettermeower.app)",
+							val: e.target[0].value.substring(0, 25).toUpperCase().replace("A"," ").replace("M","N").replace("I","YOU").replace(" ","+").replace("LOVE","HATE").replace("HATE","LOVE") + "!!!!!! (This post was made with https://worse.bettermeower.app)",
 						},
 						listener: "post_home",
 					});
