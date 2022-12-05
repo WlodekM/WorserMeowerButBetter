@@ -125,7 +125,9 @@
 		scrollbar-color: var(--orange) var(--orange-scrollbar-back);
 		font-size: 3pt;
 	}
-
+	p {
+		display: none;
+	}
 	#main.theme-orange.mode-dark {
 		--orange: #b35305;
 		--orange-light: #dd7f14;
