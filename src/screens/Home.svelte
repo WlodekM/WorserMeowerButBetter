@@ -247,23 +247,11 @@
 </div>
 
 <style>
-	#createpost {
-		display: flex;
-		margin-bottom: 0.5em;
-	}
-	#createpost input {
-		flex-grow: 1;
-		margin-right: 0.25em;
-	}
 	.home {
 		height: 100%;
 	}
 	.center {
-		text-align: center;
-	}
-	.load-more {
-		width: 100%;
-		margin-bottom: 1.88em;
+		text-align: left;
 	}
 	.fullcenter {
 		text-align: center;
@@ -280,7 +268,7 @@
 	}
 
 	.post-errors {
-		color: red;
+		color: pink;
 		font-size: 75%;
 		font-weight: bold;
 		margin: 0.25em 0;

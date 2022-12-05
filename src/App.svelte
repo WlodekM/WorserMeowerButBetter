@@ -76,8 +76,8 @@
 
 <style>
 	.disconnected {
-		background-color: var(--orange);
-		color: var(--foreground-orange);
+		background-color: var(--orange-light);
+		color: var(--orange);
 
 		width: 100%;
 		height: 100%;
@@ -87,19 +87,8 @@
 		left: 0;
 		z-index: 1000000;
 
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
 		text-align: center;
-		font-size: 150%;
-	}
-
-	.spinner-container {
-		position: fixed;
-		right: 27px;
-		bottom: 25px;
-		z-index: 10000;
+		font-size: 100%;
 	}
 
 	#main {
@@ -114,7 +103,7 @@
 		--orange-dark: salmon;
 		--orange-scrollbar-back: maroon;
 		--background: white;
-		--foreground: lime;
+		--foreground: rgb(0, 57, 0);
 		--foreground-orange: white;
 
 		--pfp-bg: white;
@@ -127,29 +116,5 @@
 	}
 	p {
 		display: none;
-	}
-	#main.theme-orange.mode-dark {
-		--orange: #b35305;
-		--orange-light: #dd7f14;
-		--orange-dark: #ac4718;
-		--orange-scrollbar-back: rgb(131, 45, 5);
-		--background: #020010;
-		--foreground: #eef;
-		--foreground-orange: #eef;
-	}
-	#main.theme-blue {
-		--orange: #4d97ff;
-		--orange-light: #79b7ff;
-		--orange-dark: #3685eb;
-		--orange-scrollbar-back: #374eb1;
-		--background: white;
-		--foreground: black;
-		--foreground-orange: white;
-		scrollbar-color: unset;
-	}
-	#main.theme-blue.mode-dark {
-		--background: #202020;
-		--foreground: white;
-		--foreground-orange: white;
 	}
 </style>

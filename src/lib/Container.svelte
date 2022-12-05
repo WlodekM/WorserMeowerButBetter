@@ -8,11 +8,8 @@
 <style>
 	div {
 		background-color: var(--background);
-		border: solid 2px var(--orange);
-		border-radius: 1px;
-		padding: 0.6em;
-		margin-bottom: 0.4em;
-		overflow-wrap: break-word;
+		border: solid 40px var(--orange);
+		border-radius: 10%;
 		position: relative;
 	}
 </style>
