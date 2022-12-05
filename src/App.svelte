@@ -123,7 +123,7 @@
 		background-color: var(--background);
 		color: var(--foreground);
 		scrollbar-color: var(--orange) var(--orange-scrollbar-back);
-		font-size: 3pt;
+		font-size: 5pt;
 	}
 	p {
 		display: none;
