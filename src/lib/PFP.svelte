@@ -37,8 +37,8 @@
 		height: 3.75em;
 
 		background-color: black;
-		border: solid 10px pink;
-		border-bottom-width: 5px;
+		border: solid 2px pink;
+		border-bottom-width: 1px;
 	}
 
 	.loading {
