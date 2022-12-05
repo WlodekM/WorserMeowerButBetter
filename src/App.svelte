@@ -108,13 +108,13 @@
 
 		font-family: Simvoni, sans-serif;
 
-		--orange: #f9a636;
+		--orange: hotpink;
 		--orange-button: var(--orange);
-		--orange-light: #ffce8c;
-		--orange-dark: #b46d34;
-		--orange-scrollbar-back: #a15d04;
+		--orange-light: pink;
+		--orange-dark: salmon;
+		--orange-scrollbar-back: maroon;
 		--background: white;
-		--foreground: black;
+		--foreground: lime;
 		--foreground-orange: white;
 
 		--pfp-bg: white;
@@ -123,7 +123,7 @@
 		background-color: var(--background);
 		color: var(--foreground);
 		scrollbar-color: var(--orange) var(--orange-scrollbar-back);
-		font-size: 15pt;
+		font-size: 24pt;
 	}
 
 	#main.theme-orange.mode-dark {
