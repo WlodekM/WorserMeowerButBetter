@@ -123,7 +123,7 @@
 		background-color: var(--background);
 		color: var(--foreground);
 		scrollbar-color: var(--orange) var(--orange-scrollbar-back);
-		font-size: 1pt;
+		font-size: 3pt;
 	}
 
 	#main.theme-orange.mode-dark {
