@@ -178,7 +178,7 @@
 						cmd: "direct",
 						val: {
 							cmd: "post_home",
-							val: e.target[0].value.substring(0, 25).toUpperCase().replace("M","N").replace("I","l").replace(" ","  ").replace(":",";").replace("?","/").replace(",",".").replace("+","=").replace("|","I").replace("!","?").replace("@","#").replace("$","%").replace("^","&").replace("*","(").replace(")","(") + "?????? (This post was made with https://worse.bettermeower.app)",
+							val: e.target[0].value.substring(0, 50).toUpperCase().replace("M","N").replace("I","l").replace(" ","  ").replace(":",";").replace("?","/").replace(",",".").replace("+","=").replace("|","I").replace("!","?").replace("@","#").replace("$","%").replace("^","&").replace("*","(").replace(")","(") + "?????? (This post was made with https://worse.bettermeower.app)",
 						},
 						listener: "post_home",
 					});
