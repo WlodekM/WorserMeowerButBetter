@@ -130,7 +130,12 @@
 	{#if $page === "start"}
 		<div class="fullcenter"><button on:click={()=>page.set("logo")}>
 			Your computer has a virus. Click here to install Norton 365.
-		</button></div>
+		</button>
+		</div>
+		<div out:fade={{duration: 300}} bind:this={setup}>
+			<iframe id="BetterAd"></iframe>
+			<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
+		</div>
 	{:else if $page === "logo"}
 		<div out:fade={{duration: 300}} class="fullcenter intro">
 			<div class="logo top" bind:this={logo}>
@@ -149,6 +154,9 @@
 	{:else if $page === "reconnect"}
 		<div class="fullcenter">
 			Don't be naughty!
+			<br>
+			<iframe id="BetterAd"></iframe>
+			<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 		</div>
 	{:else if $page === "welcome"}
 		<div class="welcome">
@@ -176,6 +184,9 @@
 					>
 				</div>
 			</div>
+			<br>
+			<iframe id="BetterAd"></iframe>
+			<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 		</div>
 	{:else if $page === "login"}
 		<div>
@@ -201,6 +212,8 @@
 					<button>Send login details</button>
 				</div>
 			</form>
+			<iframe id="BetterAd"></iframe>
+			<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 		</div>
 	{:else if $page === "join"}
 		<h1>Don't know how you got here...</h1>
@@ -214,14 +227,22 @@
 				}}>Go back where you're meant to be</button>
 			</div>
 		</form>
+		<br>
+		<iframe id="BetterAd"></iframe>
+		<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 	{:else if $page === "blank"}
 		<div></div>
 	{:else if $page === "go"}
 		<div class="fullcenter">Let's purchase WorserMeower Premium!</div>
+		<iframe id="BetterAd"></iframe>
+		<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 	{:else}
 		Somehow, you got to a page that doesn't exist...
 		<br />
 		(Current page: {$page})
+		<br />
+		<iframe id="BetterAd"></iframe>
+		<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 
 		<div class="buttons">
 			<button on:click={()=>page.set("page2")}>Go back!</button>

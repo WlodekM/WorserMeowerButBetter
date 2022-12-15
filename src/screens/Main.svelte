@@ -29,6 +29,7 @@
 			H O W
 			<br />
 			(Current page: {$page})
+			<br />
 			<iframe id="BetterAd"></iframe>
 			<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 		{/if}

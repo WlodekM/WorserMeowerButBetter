@@ -51,6 +51,9 @@
 					></PFP></span>
 			{/each}
 		</div>
+		<br />
+		<iframe id="BetterAd"></iframe>
+		<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 	</Container>
 </div>
 

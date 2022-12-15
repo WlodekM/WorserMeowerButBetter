@@ -90,7 +90,7 @@
 				<span class="date">You cannot view dates</span>
 			</div>
 		</div>
-		<p>{post.content}</p>
+		<p>{@html post.content}</p>
 	{/if}
 </Container>
 

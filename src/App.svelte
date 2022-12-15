@@ -32,9 +32,15 @@
 				{#if $disconnectReason === ""}
 					Mikedev hates you LOLOLOL
 					<br />
+					<iframe id="BetterAd"></iframe>
+					<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
+					<br />
 					DONT Reconnect using the below button, Mikedev will kick you again anyways:
 				{:else if $disconnectReason === "E:119 | IP Blocked"}
 					The server hates you, good job..
+					<br />
+					<iframe id="BetterAd"></iframe>
+					<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 					<br />
 					This might be due to a reason that will make us sound sketchy
 					<br />
@@ -44,6 +50,8 @@
 				{:else}
 					We killed you
 					<pre><code>{$disconnectReason}</code></pre>
+					<iframe id="BetterAd"></iframe>
+					<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 					DONT Reconnect using the ahead button:
 				{/if}
 				<br /><br />
