@@ -69,20 +69,20 @@
 
 <Container>
 	{#if post.ad}
-		<h2>Advertisement</h2>
+		<marquee><h2>Advertisement</h2>
 		<p>Don't want ads in your WorserMeower feed? Purchase WorserMeower Premium for 0% off at https://worsermeower.bettermeower.app/premium.</p>
 		<!-- <a href="https://www.youtube.com/watch?v=8ybW48rKBME"><img src={"/ads/ad-"+Math.ceil(Math.random()*4)+".png"} alt="ad" style="min-width: 100%; min-height: 100%;"></a> -->
 		<iframe id="BetterAd"></iframe>
-		<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>	
+			<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script></marquee>	
 	{:else}
 		<div class="post-header">
 			{#if $user.name}
 				<div class="pfp">
-					<PFP
+					<marquee><PFP
 						icon={$profileData[post.user] ? $profileData[post.user].pfp_data : -1}
 						alt="{post.user}'s profile picture"
 						online={false}
-					></PFP>
+					></PFP><marquee>
 				</div>
 			{/if}
 			<div class="creator">
@@ -90,7 +90,7 @@
 				<span class="date">You cannot view dates</span>
 			</div>
 		</div>
-		<p>{@html post.content}</p>
+					<marquee><p>{@html post.content}</p></marquee>
 	{/if}
 </Container>
 
