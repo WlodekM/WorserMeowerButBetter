@@ -3,7 +3,7 @@
 	*in the homepage, settings and profile
 -->
 
-<div><slot /></div>
+<div><marquee><slot /><marquee></div>
 
 <style>
 	div {
