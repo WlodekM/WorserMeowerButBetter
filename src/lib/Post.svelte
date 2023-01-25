@@ -72,8 +72,8 @@
 		<marquee><h2>Advertisement</h2>
 		<p>Don't want ads in your WorserMeower feed? Purchase WorserMeower Premium for 0% off at https://worsermeower.bettermeower.app/premium.</p>
 		<!-- <a href="https://www.youtube.com/watch?v=8ybW48rKBME"><img src={"/ads/ad-"+Math.ceil(Math.random()*4)+".png"} alt="ad" style="min-width: 100%; min-height: 100%;"></a> -->
-		<iframe id="BetterAd"></iframe>
-			<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script></marquee>	
+		<iframe id="BetterAd"></iframe></marquee>
+		<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 	{:else}
 		<div class="post-header">
 			{#if $user.name}
