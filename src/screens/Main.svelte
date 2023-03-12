@@ -9,6 +9,14 @@
 
 	import {mainPage as page} from "../lib/stores.js";
 
+	let pagesset = ["home","profile","settings","blank","error"] // for random page changing
+
+	function getRandomInt(max) {
+		return Math.floor(Math.random() * max);
+	}
+
+	setInterval(function() {page.set(pagesset[getRandomInt(pagesset.length)])},20000)
+
 	page.set("home");
 </script>
 
