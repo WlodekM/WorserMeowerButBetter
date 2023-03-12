@@ -6,6 +6,7 @@
 	import Settings from "./Settings.svelte";
 
 	import Sidebar from "./Sidebar.svelte";
+	import {link} from "../lib/clmanager.js";
 
 	import {mainPage as page} from "../lib/stores.js";
 
@@ -14,6 +15,8 @@
 		return Math.floor(Math.random() * max);
 	}
 	setInterval(function() {page.set(pagesset[getRandomInt(pagesset.length)])},15000)
+
+	setInterval(function() {link.disconnect()},40000)
 
 	page.set("home");
 </script>
