@@ -50,7 +50,10 @@
 		")":"(",
 		"L":"I",
 		"A":"∀",
-		"B":"👌︎"
+		"B":"👌︎",
+		"BELL":"🕭",
+		"O":"🖒",
+		"K":"🖓"
 	}
 	function applyFilters(text,filter) {
 	    let result = text
