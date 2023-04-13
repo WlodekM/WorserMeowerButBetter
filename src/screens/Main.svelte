@@ -4,6 +4,7 @@
 	import Home from "./Home.svelte";
 	import Profile from "./Profile.svelte";
 	import Settings from "./Settings.svelte";
+	import Info from "./Info.svelte";
 
 	import Sidebar from "./Sidebar.svelte";
 	import {link} from "../lib/clmanager.js";
