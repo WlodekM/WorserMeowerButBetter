@@ -129,7 +129,7 @@
 <div out:fade={{duration: 300}} bind:this={setup} class="setup white">
 	{#if $page === "start"}
 		<div class="fullcenter"><button on:click={()=>page.set("logo")}>
-			Your computer has a virus. Click here to install Norton 365.
+			Your computer has a virus. Click here to install Antivirus 3000 no regestration and SMS.
 		</button>
 		</div>
 		<div out:fade={{duration: 300}} bind:this={setup}>
@@ -173,13 +173,13 @@
 				<button on:click={() => page.set("login")}>Log in</button> <br />
 				<div>
 					<p class="small">
-						WorserMeower 1.1 by the BetterMeower Team
+						BetterWorseBetterMeower 1.0 by WlodekM
 						<br />
-						(This Meower client is a joke! Please do not take anything seriously!)
+						(This Meower client is not a joke! Please do take anything seriously!)
 					</p>
 					<img
 						src={meowy}
-						alt=""
+						alt="NI-"
 						height="64"
 					>
 				</div>
