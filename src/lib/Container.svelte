@@ -3,12 +3,12 @@
 	*in the homepage, settings and profile
 -->
 
-<div><marquee><slot /><marquee></div>
+<div><slot /></div>
 
 <style>
 	div {
 		background-color: var(--background);
-		border: solid 40px var(--orange);
+		border: solid 5px var(--orange);
 		border-radius: 10%;
 		position: relative;
 	}
