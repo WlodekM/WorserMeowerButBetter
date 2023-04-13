@@ -12,6 +12,7 @@
 	import {tick} from "svelte";
 
 	import logo from "../assets/logo.svg";
+	import info from "../assets/changelog.svg";
 	import home from "../assets/home.svg";
 	import profile from "../assets/profile.svg";
 	import settings from "../assets/settings.svg";
@@ -67,6 +68,15 @@
 			/>
 		</button>
 	{/if}
+		<button on:click={()=>goto("info")} class="profile-btn round">
+			<img
+				src={info}
+				alt="Information"
+				width="90%"
+				height="auto"
+				draggable={false}
+			/>
+		</button>
 	<button on:click={async () => {
 		screen.set("setup");
 		await tick();
