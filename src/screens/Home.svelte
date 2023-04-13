@@ -183,7 +183,7 @@
 		</div>
 	{:then}
 		<Container>
-			<marquee>
+			<div>
 			I would put some fairytales here but nah
 			<br /><br />
 			Have a <a href="https://www.youtube.com/watch?v=aBXIRV2lwzA">Fifty ways to die in minecraft fairytale</a>
@@ -191,7 +191,7 @@
 			Anyways enjoy meower
 			<br /><br />
 			Why are there {_ulist.length} people online? hm............ AAAAAAAAA{#if _ulist.length}{_ulist.join("AAAAAA")}{/if}.
-			</marquee>
+			</div>
 		</Container>
 		{#if $user.name}
 			<form 
@@ -270,11 +270,11 @@
 		</div>
 	{:catch error}
 		<Container>
-			<marquee>
+			<div>
 			<h1>woops</h1>
 			Error loading posts. Please try again.
 			<pre><code>{error}</code></pre>
-			</marquee>
+			</div>
 		</Container>
 	{/await}
 </div>
