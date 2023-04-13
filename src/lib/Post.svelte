@@ -82,7 +82,7 @@
 						icon={$profileData[post.user] ? $profileData[post.user].pfp_data : -1}
 						alt="{post.user}'s profile picture"
 						online={false}
-					></PFP><div>
+					></PFP></div>
 				</div>
 			{/if}
 			<div class="creator">
