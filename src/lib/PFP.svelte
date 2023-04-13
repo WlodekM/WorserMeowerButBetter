@@ -2,10 +2,9 @@
 
 <script>
 	export let icon = -1;
-	export let alt = "You cannot view this PFP.";
+	export let alt = "Profile picture";
 	export let online = false;
-	export let big = false;
-	
+	export let size = 1;
 	// only respond to `icon` changing
 	let id;
 	function setId(val) {
@@ -20,7 +19,7 @@
 	{/if}
 	<span class="pfp">
 		<img
-			alt="You cannot view this PFP."
+			{alt}
 			title={alt}
 			src={new URL(
 				`./../assets/avatars/icon_${
@@ -33,7 +32,7 @@
 			draggable={false}
 			width="auto"
 			height="100%"
-		>
+		/>
 	</span>
 </span>
 
