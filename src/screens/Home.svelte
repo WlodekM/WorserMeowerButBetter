@@ -60,6 +60,7 @@
 		    result.replaceAll(key,CurrentFilter[key])
 		}
 	    }
+	    return(result)
 	}
 	async function loadPage(page) {
 		pageLoading = true;
