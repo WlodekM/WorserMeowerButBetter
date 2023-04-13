@@ -13,7 +13,7 @@
 	$: setId(icon);
 </script>
 
-<span class="pfp-container" class:big>
+<span class="pfp-container" style:--size={size}>
 	{#if online}
 		<span class="online"></span>
 	{/if}
