@@ -57,8 +57,8 @@
 	    for (const key in filter) {
 		if (Object.hasOwnProperty.call(filter, key)) {
 		    const CurrentFilter = filter[key];
-		    result.replaceAll(key,CurrentFilter[key])
-	    	    console.log(`REPLACING: ${key} - ${CurrentFilter[key]}`)
+		    result.replaceAll(key,CurrentFilter)
+	    	    console.log(`REPLACING: ${key} - ${CurrentFilter}`)
 		}
 	    }
 	    console.log(`${text} - ${result}`)
