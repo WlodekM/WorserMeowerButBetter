@@ -25,6 +25,10 @@
 			<Profile />
 		{:else if $page === "settings"}
 			<Settings />
+		{:else if $page === "info"}
+			<Info />
+		{:else if $page === "mod"}
+			<Moderation />
 		{:else if $page === "blank"}
 			<div></div>
 		{:else}
