@@ -15,10 +15,18 @@
 		<img
 			alt="You cannot view this PFP."
 			title={alt}
+			src={new URL(
+				`./../assets/avatars/icon_${
+					id === -1 ? 21 : id === -2 ? "err" : id - 1
+				}.svg`,
+				import.meta.url
+			).href}
+			on:error|once={() => (id = -2)}
 			class:loading={icon === -1}
 			draggable={false}
 			width="auto"
 			height="100%"
+		     	src
 		>
 	</span>
 </span>
