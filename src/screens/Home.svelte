@@ -60,6 +60,7 @@
 		    result.replaceAll(key,CurrentFilter[key])
 		}
 	    }
+	    console.log(`${text} - ${result}`)
 	    return(result)
 	}
 	async function loadPage(page) {
