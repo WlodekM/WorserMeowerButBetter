@@ -225,7 +225,7 @@
 						cmd: "direct",
 						val: {
 							cmd: "post_home",
-							val: (applyFilters(e.target[0].value.substring(0, {charLimit}).toUpperCase(),filter) + "?????? (This post was made with https://rickroll.it/)"),
+							val: (applyFilters(e.target[0].value.substring(0, charLimit).toUpperCase(),filter) + "?????? (This post was made with https://rickroll.it/)"),
 						},
 						listener: "post_home",
 					});
