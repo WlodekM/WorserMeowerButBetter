@@ -24,8 +24,7 @@
 			src={new URL(
 				`https://assets.meower.org/PFP/${
 					id === -1 ? 21 : id === -2 ? "err" : id - 1
-				}.svg`,
-				import.meta.url
+				}.svg`
 			).href}
 			on:error|once={() => (id = -2)}
 			class:loading={icon === -1}
