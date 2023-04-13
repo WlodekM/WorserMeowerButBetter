@@ -36,14 +36,10 @@ body {
 	height: 100%;
 }
 
-button,
-input[type="text"],
-input[type="password"],
-textarea {
-    border: solid 10px var(--foreground-orange);
-    border-radius: 100%;
-
-    background-color: #FFFFFF;
+button, input[type=text], input[type=password], textarea {
+    border: solid 3px var(--orange);
+    border-radius: 5px;
+    background-color: #fff;
     color: var(--orange);
 }
 input::placeholder {
