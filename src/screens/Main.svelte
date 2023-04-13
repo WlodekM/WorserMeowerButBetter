@@ -5,6 +5,8 @@
 	import Profile from "./Profile.svelte";
 	import Settings from "./Settings.svelte";
 	import Info from "./Info.svelte";
+	import chatlist from "./Chatlist.svelte";
+	import gc from "./Groupchat.svelte";
 
 	import Sidebar from "./Sidebar.svelte";
 	import {link} from "../lib/clmanager.js";
@@ -29,6 +31,10 @@
 			<Info />
 		{:else if $page === "mod"}
 			<Moderation />
+		{:else if $page === "chatlist"}
+			<chatlist />
+		{:else if $page === "groupchat"}
+			<gc />
 		{:else if $page === "blank"}
 			<div></div>
 		{:else}
