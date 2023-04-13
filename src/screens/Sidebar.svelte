@@ -89,7 +89,7 @@
 		/* Hack to center icons */
 		line-height: 0;
 		background: var(--orange);
-		border 2px solid var(--background)
+		border: 2px solid var(--background)
 	}
 
 	.sidebar {
