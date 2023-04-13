@@ -14,6 +14,7 @@
 	/**
 	 * Initialize this post's user profile - gets profile info from the cache or fetches it.
 	 */
+	post.content = post.content.replaceAll("\n","<br>")
 	function initPostUser() {
 		if (!post.user) return;
 		if (!($user.name)) return;
@@ -90,7 +91,7 @@
 				<span class="date">You cannot view dates</span>
 			</div>
 		</div>
-					<div><p>{@html post.content}</p></div>
+					<div><p>{post.content}</p></div>
 	{/if}
 </Container>
 
