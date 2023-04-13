@@ -9,7 +9,7 @@
 	div {
 		background-color: var(--background);
 		border: solid 5px var(--orange);
-		border-radius: 10%;
+		border-radius: 2px;
 		position: relative;
 	}
 </style>
