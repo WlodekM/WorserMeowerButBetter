@@ -26,7 +26,6 @@
 			draggable={false}
 			width="auto"
 			height="100%"
-		     	src
 		>
 	</span>
 </span>
