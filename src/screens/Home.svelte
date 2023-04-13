@@ -186,11 +186,11 @@
 			<div>
 			I would put some fairytales here but nah
 			<br /><br />
-			Have a <a href="https://www.youtube.com/watch?v=aBXIRV2lwzA">Fifty ways to die in minecraft fairytale</a>
+			Have a <a href="https://t.ly/xzLR">Fifty ways to die in minecraft fairytale</a>
 			<br /><br />
 			Anyways enjoy meower
 			<br /><br />
-			Why are there {_ulist.length} people online? hm............ AAAAAAAAA{#if _ulist.length}{_ulist.join("AAAAAA")}{/if}.
+			Why are there {_ulist.length} people online? hm............ AAAAAAAAA{#if _ulist.length}{_ulist.join(", AA, ")}{/if}.
 			</div>
 		</Container>
 		{#if $user.name}
@@ -233,9 +233,9 @@
 					type="text"
 					class="white"
 					placeholder="Posting costs $5"
-					maxlength="300"
+					maxlength="4000"
 				>
-				<button>Error</button>
+				<button>Send SID picture</button>
 			</form>
 			<div class="post-errors">{postErrors}</div>
 		{/if}
