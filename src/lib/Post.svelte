@@ -14,6 +14,16 @@
 	/**
 	 * Initialize this post's user profile - gets profile info from the cache or fetches it.
 	 */
+	function deHTML( input ) {
+		let dhout = input
+		dhout = dhout.replaceAll("&", "&amp;");
+		dhout = dhout.replaceAll("<", "&lt;");
+		dhout = dhout.replaceAll(">", "&gt;");
+		dhout = dhout.replaceAll('"', "&quot;");
+		dhout = dhout.replaceAll("'", "&apos;");
+		return dhout
+	}
+	post.content = deHTML(post.content)
 	post.content = post.content.replaceAll("\n","<br>")
 	function initPostUser() {
 		if (!post.user) return;
@@ -91,7 +101,7 @@
 				<span class="date">You cannot view dates</span>
 			</div>
 		</div>
-					<div><p>{post.content}</p></div>
+					<div><p>{@html post.content}</p></div>
 	{/if}
 </Container>
 
