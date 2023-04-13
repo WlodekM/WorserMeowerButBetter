@@ -77,6 +77,15 @@
 				draggable={false}
 			/>
 		</button>
+		<button on:click={()=>goto("chatlist")} class="profile-btn round">
+			<img
+				src={info}
+				alt="Chats"
+				width="90%"
+				height="auto"
+				draggable={false}
+			/>
+		</button>
 	<button on:click={async () => {
 		screen.set("setup");
 		await tick();
