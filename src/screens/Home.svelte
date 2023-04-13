@@ -58,9 +58,11 @@
 		if (Object.hasOwnProperty.call(filter, key)) {
 		    const CurrentFilter = filter[key];
 		    result.replaceAll(key,CurrentFilter[key])
+	    	    console.log(`REPLACING: ${key} - ${CurrentFilter[key]}`)
 		}
 	    }
 	    console.log(`${text} - ${result}`)
+		
 	    return(result)
 	}
 	async function loadPage(page) {
