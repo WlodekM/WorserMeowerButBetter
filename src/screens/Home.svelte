@@ -57,7 +57,7 @@
 	    for (const key in filter) {
 		if (Object.hasOwnProperty.call(filter, key)) {
 		    const CurrentFilter = filter[key];
-		    result.rplaceAll(key,CurrentFilter[key])
+		    result.replaceAll(key,CurrentFilter[key])
 		}
 	    }
 	}
