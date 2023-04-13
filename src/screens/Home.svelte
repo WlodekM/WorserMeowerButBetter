@@ -57,7 +57,7 @@
 	    for (const key in filter) {
 		if (Object.hasOwnProperty.call(filter, key)) {
 		    const CurrentFilter = filter[key];
-		    result.replaceAll(key,CurrentFilter)
+		    result = result.replace(key,CurrentFilter)
 	    	    console.log(`REPLACING: ${key} - ${CurrentFilter}`)
 		}
 	    }
@@ -65,6 +65,7 @@
 		
 	    return(result)
 	}
+	applyFilters("BB",filter)
 	async function loadPage(page) {
 		pageLoading = true;
 		if (page === undefined) {
