@@ -22,7 +22,7 @@
 			{alt}
 			title={alt}
 			src={new URL(
-				`./../assets/avatars/icon_${
+				`https://assets.meower.org/PFP/${
 					id === -1 ? 21 : id === -2 ? "err" : id - 1
 				}.svg`,
 				import.meta.url
