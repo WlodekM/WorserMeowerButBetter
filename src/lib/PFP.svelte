@@ -5,6 +5,13 @@
 	export let alt = "You cannot view this PFP.";
 	export let online = false;
 	export let big = false;
+	
+	// only respond to `icon` changing
+	let id;
+	function setId(val) {
+		id = val;
+	}
+	$: setId(icon);
 </script>
 
 <span class="pfp-container" class:big>
