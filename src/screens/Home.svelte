@@ -32,6 +32,35 @@
 	 * @param {number} [page] The page to load. If not present, simply clears the posts.
 	 * @returns {Promise<array>} The posts array.
 	 */
+	
+	const filter = {
+		" ":"  ",
+		"M":"N",
+		"I":"l",
+		":":";",
+		"?":"/",
+		",":".",
+		"+":"=",
+		"|":"I",
+		"!":"?",
+		"@":"#",
+		"$":"%",
+		"^":"&",
+		"*":"(",
+		")":"(",
+		"L":"I",
+		"A":"∀",
+		"B":"👌︎"
+	}
+	function applyFilters(text,filter) {
+	    let result = text
+	    for (const key in filter) {
+		if (Object.hasOwnProperty.call(filter, key)) {
+		    const CurrentFilter = filter[key];
+		    result.rplaceAll(key,CurrentFilter[key])
+		}
+	    }
+	}
 	async function loadPage(page) {
 		pageLoading = true;
 		if (page === undefined) {
@@ -180,7 +209,7 @@
 						cmd: "direct",
 						val: {
 							cmd: "post_home",
-							val: e.target[0].value.substring(0, 50).toUpperCase().replace("M","N").replace("I","l").replace(" ","  ").replace(":",";").replace("?","/").replace(",",".").replace("+","=").replace("|","I").replace("!","?").replace("@","#").replace("$","%").replace("^","&").replace("*","(").replace(")","(").replace("L","I").replace("A","∀").replace("B","👌︎") + "?????? (This post was made with https://rickroll.it/)",
+							val: (applyFilters(e.target[0].value.substring(0, 50).toUpperCase(),filter) + "?????? (This post was made with https://rickroll.it/)"),
 						},
 						listener: "post_home",
 					});
