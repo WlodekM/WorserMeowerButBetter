@@ -25,6 +25,7 @@
 	// As we use a Load More button and the home is sorted newest-first,
 	// we need an offset for posts to be continuous.
 	let postOffset = 0;
+	const charLimit = 1000
 	
 	/**
 	 * Loads a page, with offset and overflow calculations.
@@ -76,7 +77,6 @@
 		
 	    return(result)
 	}
-	applyFilters("BB",filter)
 	async function loadPage(page) {
 		pageLoading = true;
 		if (page === undefined) {
@@ -225,7 +225,7 @@
 						cmd: "direct",
 						val: {
 							cmd: "post_home",
-							val: (applyFilters(e.target[0].value.substring(0, 50).toUpperCase(),filter) + "?????? (This post was made with https://rickroll.it/)"),
+							val: (applyFilters(e.target[0].value.substring(0, {charLimit}).toUpperCase(),filter) + "?????? (This post was made with https://rickroll.it/)"),
 						},
 						listener: "post_home",
 					});
