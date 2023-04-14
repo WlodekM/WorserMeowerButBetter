@@ -16,6 +16,9 @@ export const modalPage = writable("");
 export const disconnected = writable(false);
 export const disconnectReason = writable("");
 
+// Cached profiles
+export const profileData = writable({});
+
 // Last typed
 export const lastTyped = writable(0);
 
@@ -57,3 +60,4 @@ export const user = writable({
 export const spinner = writable(false);
 
 export const windowStyle = writable({});
+
